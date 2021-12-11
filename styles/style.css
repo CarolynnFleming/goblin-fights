@@ -29,14 +29,9 @@ body {
     
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    background-image: url(../assets/thunderstorm-r.jpeg);
+    background-size: cover;
+    text-align: center;
 }
 
 section {
@@ -51,6 +46,11 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+}
+
+main{
+    height: 100%;
+    display: flex;
 }
 
 header {
@@ -88,4 +88,85 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.player-stats {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player {
+    color: lightblue;
+    font-size: 3rem;
+    font-weight: 1000;
+    font-family: fantasy;
+    text-align: center;
+    padding: 5px;
+}
+.player p {
+    background-color: orange;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.zombie-stats {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zombie-stats input, .zombie-stats button {
+    height: 50px;
+    width: 100px;
+    color: lightblue;
+    background: orange;
+}
+.zombie-stats button {
+    font-size: 1.2rem;
+}
+.zombie-stats input {
+    font-size: 1.2rem;
+    width: 80%;
+}
+.eliminated-zombies {
+text-align: center;
+}
+.eliminated-zombies p {
+    font-size: 2rem;
+    color:skyblue;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 15px;
+}
+form {
+    padding: 150px;
+    display: flex;
+}
+.zombie {
+    cursor: pointer;
+    border: solid 3px orange;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px;
+    margin-top: 20px;
+    line-height: 4px;
+    font-size: 4rem;
+}
+
+.dead {
+    opacity: .2;
+    cursor: default;
+}
+.game-over {
+    transform: rotate(90deg);
 }
